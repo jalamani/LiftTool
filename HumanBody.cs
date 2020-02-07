@@ -8,8 +8,9 @@ namespace LiftTool
 {
     class HumanBody : Body
     {
-        private bool sex;
+        private bool _Sex;
 
-        public bool Sex { get => sex; set => sex = value; }
+        //Muscle 
+        //public bool Sex { get => sex; set => sex = value; }
     }
 }

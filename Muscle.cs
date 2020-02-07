@@ -8,8 +8,13 @@ namespace LiftTool
 {
     class Muscle
     {
-        private int strength;
+        private int _Strength;
 
-        public int Strength { get => strength; set => strength = value; }
+        public Muscle(int strength)
+        {
+            _Strength = strength;
+        }
+
+        //public int Strength { get => strength; set => strength = value; }
     }
 }

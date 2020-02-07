@@ -8,11 +8,11 @@ namespace LiftTool
 {
     public abstract class Body
     {
-        private int age;
+        protected int _Age;
 
-        private int weight;
+        protected int _Weight;
 
-        protected int Age { get => age; set => age = value; }
-        protected int Weight { get => weight; set => weight = value; }
+        //protected int Age { get => age; set => age = value; }
+        //protected int Weight { get => weight; set => weight = value; }
     }
 }
