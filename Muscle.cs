@@ -9,12 +9,13 @@ namespace LiftTool
     class Muscle
     {
         private int _Strength;
+        //private string _Name;
 
-        public Muscle(int strength)
+        public Muscle()
         {
-            _Strength = strength;
+            _Strength = 0;
         }
 
-        //public int Strength { get => strength; set => strength = value; }
+        public int Strength { get => _Strength; set => _Strength = value; }
     }
 }

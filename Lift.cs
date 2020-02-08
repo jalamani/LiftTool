@@ -18,7 +18,7 @@ namespace LiftTool
             _Weight = weight;
         }
 
-        //internal List<Muscle> TargetMuscle { get => targetMuscles; set => targetMuscles = value; }
-        //public int Weight1 { get => Weight; set => Weight = value; }
+        internal List<Muscle> TargetMuscle { get => _TargetMuscles; set => _TargetMuscles = value; }
+        public int Weight1 { get => _Weight; set => _Weight = value; }
     }
 }
