@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LiftTool
 {
-    class HumanBody : Body
+    public class HumanBody : Body
     {
         private bool _Sex;
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LiftTool
 {
-    class Lift
+    public class Lift
     {
         private List<Muscle> _TargetMuscles;
 

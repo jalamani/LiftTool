@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LiftTool
 {
-    class Muscle
+    public class Muscle
     {
         private int _Strength;
         //private string _Name;
