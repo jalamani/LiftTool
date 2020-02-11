@@ -16,9 +16,13 @@ namespace LiftTool
         {
             _TargetMuscles = targetMuscle;
             _Weight = weight;
+            foreach (Muscle item in targetMuscle)
+            {
+                item.Strength = weight;
+            }
         }
 
         internal List<Muscle> TargetMuscle { get => _TargetMuscles; set => _TargetMuscles = value; }
-        public int Weight1 { get => _Weight; set => _Weight = value; }
+        public int Weight { get => _Weight; set => _Weight = value; }
     }
 }

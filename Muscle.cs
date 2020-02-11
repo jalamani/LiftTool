@@ -9,7 +9,6 @@ namespace LiftTool
     public class Muscle
     {
         private int _Strength;
-        //private string _Name;
 
         public Muscle()
         {
