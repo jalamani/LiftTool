@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+
 
 namespace LiftTool
 {
@@ -20,8 +22,23 @@ namespace LiftTool
         private void Form1_Load(object sender, EventArgs e)
         {
             // Update the label automatically from the setting
-            weightInput.DataBindings.Add("Value", Properties.Settings.Default, "BodyWeight", true,
-                                   DataSourceUpdateMode.OnPropertyChanged);
+            List<string> appsettingsNames = new List<string> 
+            {
+                "LegRaiseWeight",
+                "CalfRaiseWeight",
+                "SquatWeight",
+                "DeadLiftWeight",
+                "ShoulderPressWeight",
+                "BicepCurlWeight",
+                "ShrugWeight",
+                "BenchPressWeight",
+
+            };
+            weightInput.DataBindings.Add("Value", Properties.Settings.Default, "BodyWeight", true, DataSourceUpdateMode.OnPropertyChanged);
+            for(int i =0;i<appsettingsNames.Count;i++)
+            {
+                Controls[i].DataBindings.Add("Value", Properties.Settings.Default, appsettingsNames[i], true, DataSourceUpdateMode.OnPropertyChanged);
+            }
         }
 
         
@@ -33,7 +50,7 @@ namespace LiftTool
 
         private void bodyImage_Click(object sender, EventArgs e)
         {
-
+            
         }
     }
 }
